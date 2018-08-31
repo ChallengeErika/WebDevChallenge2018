@@ -3,13 +3,17 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     watch: {
-      files: '*.css'
+      css : {
+        files : 'assets/sass/*.scss',
+        tasks : ['sass']
+      }
     },
     browserSync: {
       dev: {
         bsFiles: {
           src: [
-            '*.css',
+            'assets/css/*.css',
+
             'index.html'
           ]
         },
@@ -21,19 +25,14 @@ module.exports = function(grunt) {
     },
     sass: { // Task
       dist: { // Target
-        options: { // Target options
-          style: 'expanded'
-        },
         files: { // Dictionary of files
-          'main.css': 'main.scss', // 'destination': 'source'
-          'widgets.css': 'widgets.scss'
+          'assets/css/main.css':'assets/sass/main.scss', // 'destination': 'source'
         }
       }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -42,6 +41,6 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['browserSync', 'watch']);
-
+  grunt.registerTask('default', [ 'sass','watch' ,'browserSync' ]);
+//
 };
