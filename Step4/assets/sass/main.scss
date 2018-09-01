@@ -1,7 +1,99 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: yellow;
+//Fonts
+$font-stack: 'Fjalla One', sans-serif;
 
+//colors
+$white: #ffffff;
+$orange : #AA4400;
+//Numbers
+$number0 : 0em;
+$number1: 40px;
+$number2: 70vh;
+$number3: 1.5em;
+$number4: 10vh;
+$number5: 2em;
+//Positions
+$top: top;
+$center : center;
+//urlFiles
+$urlImage : '../img/home_bg.jpg';
+$urlImageFeaturedProducts : '../img/home_banner.jpg';
+
+
+//display
+$none :none;
+
+html {
+box-sizing: border-box;
+margin: 0 auto;
+
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+  background-color:  $white;
+}
+/* Header */
+.content-header{
+  padding-top: $number1;
+}
+.hero{
+  background-image: url($urlImage);
+  height: $number2;
+  background-position: $top $center;
+  background-size: cover;
+  font-family: $font-stack;
+
+}
+.menu_options{
+  text-align: $center;
+  a{
+    color: $white;
+    font-size: $number3;
+    margin-right: $number4;
+  }
+}
+#logo{
+  width: 8em;
+}
+.event-slogan{
+  text-align: $center;
+  color: $white;
+  margin-top: 3em;;
+
+  .slogan{
+    margin-top: $number0;
+    padding-bottom: $number0;
+    font-weight: bold;
+    font-size: $number3 * 2;
+  }
+}
+@media only screen and (max-width: 880px) {
+ .header-medium {
+    display: $none !important;
+ }
+
+}
+@media only screen and (max-width: 2560px) and (min-width: 881px) {
+  .header-small{
+    display : none !important;
+  }
+
+}
+//featured-products
+.featured-products{
+  background-image: url($urlImageFeaturedProducts);
+  height: $number2 /4;
+  background-position: $top $center;
+  background-size: cover;
+  font-family: $font-stack;
+  h2{
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: $number5;
+
+  }
+
+
 }

@@ -12,8 +12,7 @@ module.exports = function(grunt) {
       dev: {
         bsFiles: {
           src: [
-            'assets/css/*.css',
-
+          'assets/css/*.css',
             'index.html'
           ]
         },
@@ -41,6 +40,6 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', [ 'sass','watch' ,'browserSync' ]);
+  grunt.registerTask('default', [ 'sass' ,'browserSync', 'watch' ]);
 //
 };

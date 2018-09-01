@@ -1,5 +1,60 @@
+html {
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
 body {
-  font: 100% Helvetica, sans-serif;
-  color: yellow; }
+  background-color: #ffffff; }
+
+/* Header */
+.content-header {
+  padding-top: 40px; }
+
+.hero {
+  background-image: url("../img/home_bg.jpg");
+  height: 70vh;
+  background-position: top center;
+  background-size: cover;
+  font-family: "Fjalla One", sans-serif; }
+
+.menu_options {
+  text-align: center; }
+  .menu_options a {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-right: 10vh; }
+
+#logo {
+  width: 8em; }
+
+.event-slogan {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 3em; }
+  .event-slogan .slogan {
+    margin-top: 0em;
+    padding-bottom: 0em;
+    font-weight: bold;
+    font-size: 3em; }
+
+@media only screen and (max-width: 880px) {
+  .header-medium {
+    display: none !important; } }
+@media only screen and (max-width: 2560px) and (min-width: 881px) {
+  .header-small {
+    display: none !important; } }
+.featured-products {
+  background-image: url("../img/home_banner.jpg");
+  height: 17.5vh;
+  background-position: top center;
+  background-size: cover;
+  font-family: "Fjalla One", sans-serif; }
+  .featured-products h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2em; }
 
 /*# sourceMappingURL=main.css.map */
