@@ -4,6 +4,7 @@ $font-stack: 'Fjalla One', sans-serif;
 //colors
 $white: #ffffff;
 $orange : #AA4400;
+$black : black;
 //Numbers
 $number0 : 0em;
 $number1: 40px;
@@ -11,6 +12,8 @@ $number2: 70vh;
 $number3: 1.5em;
 $number4: 10vh;
 $number5: 2em;
+$number6 : 6em;
+$number7: 1.4em;
 //Positions
 $top: top;
 $center : center;
@@ -96,4 +99,34 @@ body {
   }
 
 
+}
+//carousel
+.carousel{
+  height: 50vh;
+  margin-top: $number3*3;
+}
+.imgCarousel{
+  margin-top: $number3;
+}
+.slide{
+  width: $number5;
+  margin-right:  $number6;
+}
+.slide-left{
+  width: $number5;
+  margin-right:  $number6;
+  margin-left:   $number6;
+}
+.description{
+  font-size: $number7;
+}
+.buttonBuy{
+  font-family: $font-stack;
+  color: $white;
+  font-size: $number7;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $black;
+  color: $black;
 }

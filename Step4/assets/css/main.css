@@ -57,4 +57,33 @@ body {
     text-align: center;
     margin-top: 2em; }
 
+.carousel {
+  height: 50vh;
+  margin-top: 4.5em; }
+
+.imgCarousel {
+  margin-top: 1.5em; }
+
+.slide {
+  width: 2em;
+  margin-right: 6em; }
+
+.slide-left {
+  width: 2em;
+  margin-right: 6em;
+  margin-left: 6em; }
+
+.description {
+  font-size: 1.4em; }
+
+.buttonBuy {
+  font-family: "Fjalla One", sans-serif;
+  color: #ffffff;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid black;
+  color: black; }
+
 /*# sourceMappingURL=main.css.map */
